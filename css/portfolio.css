@@ -104,4 +104,39 @@ button {
     padding: 0 15px;
   }
 }
+
+.social-link-list {
+  margin-left: 70px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links :not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link-item {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-size: auto;
+}
+
+.social-link-item:hover, .social-link-item:focus {
+  background-color: var(--accent-color);
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 /*# sourceMappingURL=portfolio.css.map */
