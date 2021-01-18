@@ -186,7 +186,7 @@ button {
   .footer-main .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
@@ -219,6 +219,7 @@ button {
   .footer-main .social-link-list {
     margin-top: 0;
     margin-bottom: 0;
+    text-align: start;
   }
 }
 
@@ -298,11 +299,44 @@ button {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-form {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+  }
+  .footer-form .form-list {
+    margin: 0 auto;
+  }
+  .footer-form .footer-form-label {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .footer-form .form-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 93px;
+  }
+  .footer-form .footer-form-label {
+    max-width: 358px;
+  }
+  .footer-form .main-btn {
+    margin-left: 12px;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

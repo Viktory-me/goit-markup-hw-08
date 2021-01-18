@@ -14,7 +14,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: baseline;
     }
   }
@@ -43,6 +43,7 @@
     .social-link-list {
       margin-top: 0;
       margin-bottom: 0;
+      text-align: start;
     }
   }
 
