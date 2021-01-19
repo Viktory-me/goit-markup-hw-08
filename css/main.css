@@ -423,6 +423,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-main .container {
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-main {
     padding: 60px 89px 60px 76px;
