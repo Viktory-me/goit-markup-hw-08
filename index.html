@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container">
         <a
           class="logotype-header"
           href="/"
@@ -25,17 +25,18 @@
         </a>
         <button type="button" class="menu-button" data-menu-button>
           <svg
-            width="40px"
-            height="40px"
+            class="menu-icon"
             aria-label="переключатель меню навигации"
+            aria-expanded="false"
+            aria-controls="menu-container"
           >
-            <use
-              class="icon-cross"
-              href="./images/symbol-defs.svg#icon-close"
-            ></use>
+            <use class="icon-cross" href="./images/symbol-defs.svg#cross"></use>
             <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
           </svg>
         </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          контейнер меню
+        </div>
         <!-- <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-list-item">
@@ -67,9 +68,8 @@
             +38 096 111 11 11
           </a>
         </address> -->
-      </header>
-    </div>
-
+      </div>
+    </header>
     <main>
       <!--hero-->
       <div class="overlay">
@@ -604,5 +604,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
