@@ -37,7 +37,7 @@
 
   .client-link {
     display: inline-block;
-    width: 210px;
+    width: 100%;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     padding: 20px 0;
@@ -46,12 +46,6 @@
     &:focus {
       border: 1px solid var(--accent-color);
       color: var(--accent-color);
-    }
-    @media screen and (min-width: 767px) {
-      width: 226px;
-    }
-    @media screen and (min-width: 1200px) {
-      max-width: 170px;
     }
   }
   .client-icon {

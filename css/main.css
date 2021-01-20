@@ -797,7 +797,7 @@ button {
 
 .clients-list .client-link {
   display: inline-block;
-  width: 210px;
+  width: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 20px 0;
@@ -807,18 +807,6 @@ button {
 .clients-list .client-link:hover, .clients-list .client-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
-}
-
-@media screen and (min-width: 767px) {
-  .clients-list .client-link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-list .client-link {
-    max-width: 170px;
-  }
 }
 
 .clients-list .client-icon {
