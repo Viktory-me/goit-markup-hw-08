@@ -117,10 +117,9 @@ button {
 }
 
 .menu-button {
-  display: inline-flex;
-  align-items: center;
+  display: block;
   margin: 0;
-  padding: 11px 0;
+  padding: 0;
   border: none;
   background-color: transparent;
   width: 40px;
@@ -145,16 +144,7 @@ button {
   justify-content: center;
   width: 40px;
   height: 40px;
-}
-
-.menu-icon .icon-cross {
-  width: 19px;
-  height: 19px;
-}
-
-.menu-icon .icon-menu {
-  width: 24px;
-  height: 26px;
+  margin: 0 auto;
 }
 
 .menu-container {
