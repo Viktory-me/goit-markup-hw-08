@@ -108,6 +108,8 @@ button {
 .header {
   position: relative;
   padding: 16px 0;
+  border-bottom: 1px solid #ececec;
+  cursor: pointer;
 }
 
 .header .container {
@@ -116,87 +118,57 @@ button {
   justify-content: space-between;
 }
 
-.menu-button {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin: 0 auto;
-}
-
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 60px 140px;
-  font-size: 18px;
-  line-height: 1.167;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  background-color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-}
-
-.menu-container.is-open {
-  display: block;
-}
-
-/*
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  width: 100%;
-  border-bottom: 1px solid #ececec;
+@media screen and (min-width: 768px) {
   .adress {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
+}
+
+.link-tel {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.link-mail {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-mail,
+.header-tel {
+  color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-mail {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-tel {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*
+
+.header {
+ 
+
   .header-mail {
     margin-right: 50px;
     display: flex;
     align-items: center;
   }
-  .header-tel {
-    display: flex;
-    align-items: center;
-  }
-  .logotype-header {
-    margin-right: 93px;
+  
+  
   }
 }
 
@@ -252,24 +224,9 @@ button {
   }
 }
 
-.header-mail,
-.header-tel {
-  color: #757575;
 }
 
-.link-tel {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-}
 
-.link-mail {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
 */
 .social-links {
   display: flex;
