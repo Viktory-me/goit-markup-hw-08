@@ -53,6 +53,7 @@ p {
 
 img {
   box-sizing: border-box;
+  width: 100%;
 }
 
 ul {
@@ -119,9 +120,32 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding: 21px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .adress {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress {
+    font-size: 14px;
+    line-height: 1.143;
+    flex-direction: row;
   }
 }
 
@@ -132,6 +156,13 @@ button {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .link-tel {
+    width: 14px;
+    height: 10px;
+  }
+}
+
 .link-mail {
   width: 10px;
   height: 16px;
@@ -139,38 +170,124 @@ button {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .link-mail {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .header-mail,
 .header-tel {
+  display: block;
   color: #757575;
+}
+
+@media screen and (max-width: 768px) {
+  .header-mail {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-mail {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .header-mail {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 1200px) {
+.header-tel {
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
   .header-tel {
     display: flex;
     align-items: center;
   }
 }
 
-/*
+.navigation-list {
+  padding-bottom: 60px;
+}
 
-.header {
- 
-
-  .header-mail {
-    margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .navigation-list {
     display: flex;
     align-items: center;
-  }
-  
-  
+    padding: 0;
+    margin-left: 88px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .navigation-list {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-list-item {
+    margin-bottom: 0;
+  }
+}
+
+.navigation-list-link {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+.navigation .current {
+  color: var(--accent-color);
+}
+
+.navigation .current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation .current::after {
+    bottom: -32px;
+  }
+}
+
+.navigation-list-link:hover, .navigation-list-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+/*
+
 
 .navigation {
   display: flex;
@@ -191,15 +308,6 @@ button {
   }
 }
 
-.navigation-list {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-list-item {
-  display: flex;
-  flex-direction: column;
-  position: relative;
 
   &:not(:last-child) {
     margin-right: 50px;
@@ -221,12 +329,7 @@ button {
   &:hover,
   &:focus {
     color: var(--accent-color);
-  }
-}
-
-}
-
-
+  }}
 */
 .logotype-header {
   font-family: var(--font-secondary);
@@ -235,6 +338,13 @@ button {
   line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .logotype-header {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .part-logo {
@@ -866,13 +976,12 @@ button {
 
 .menu-container {
   text-align: center;
-  padding: 60px 140px;
+  padding: 60px 0;
   font-size: 18px;
   line-height: 1.167;
   letter-spacing: 0.02em;
   font-weight: 500;
   background-color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 @media screen and (max-width: 767px) {
@@ -882,6 +991,7 @@ button {
     top: 100%;
     left: 0;
     width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   .menu-container.is-open {
     display: block;
@@ -893,6 +1003,7 @@ button {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
+    align-items: center;
     padding: 0;
     font-size: 14px;
     line-height: 1.143;
