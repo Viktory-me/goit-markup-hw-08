@@ -36,8 +36,9 @@
   letter-spacing: 0.02em;
   font-weight: 500;
   background-color: white;
+  z-index: 1;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
     position: absolute;
     top: 100%;
