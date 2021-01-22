@@ -3,10 +3,10 @@
 }
 
 .project-list {
-  display: flex;
-
-  flex-wrap: wrap;
   @media screen and (min-width: 768px) {
+    display: flex;
+
+    flex-wrap: wrap;
     margin: -15px;
   }
   @media screen and (min-width: 1200px) {
@@ -14,7 +14,6 @@
   }
 }
 .project-list-item {
-  width: 100%;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
 
@@ -91,3 +90,11 @@
 .project-card {
   border: 1px solid #eeeeee;
 }
+
+/*sizes="(min-width: 1200px) 25vw, 
+                (min-width: 768px) 50vw, 
+                (min-width: 480px) 100vw,
+                100vw"
+                 ./images/team/person3-desktop.jpg 1x,
+                    ./images/team/person3-tablet.jpg  2x,
+                    ./images/team/person3-mobile.jpg  3x*/
