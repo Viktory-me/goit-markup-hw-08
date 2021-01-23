@@ -16,6 +16,7 @@
 .project-list-item {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
+  max-height: 404px;
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
@@ -88,9 +89,17 @@
   }
 }
 .project-card {
+  display: inline-block;
   border: 1px solid #eeeeee;
 }
-
+.secondary {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 15px;
+    .project-title {
+      line-height: 1.167;
+    }
+  }
+}
 /*sizes="(min-width: 1200px) 25vw, 
                 (min-width: 768px) 50vw, 
                 (min-width: 480px) 100vw,

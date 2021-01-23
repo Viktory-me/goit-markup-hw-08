@@ -484,6 +484,7 @@ button {
 .project-list-item {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
+  max-height: 404px;
   border: 1px solid #eeeeee;
 }
 
@@ -569,7 +570,17 @@ button {
 }
 
 .project-card {
+  display: inline-block;
   border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .secondary {
+    padding-top: 15px;
+  }
+  .secondary .project-title {
+    line-height: 1.167;
+  }
 }
 
 /*sizes="(min-width: 1200px) 25vw, 
