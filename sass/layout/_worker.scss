@@ -28,7 +28,8 @@
   font-size: 28px;
   line-height: 1.176;
   @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
   }
 }
 .worker-groupe-item {
@@ -42,6 +43,7 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
+    margin-top: 50px;
   }
 }
 .worker-element {

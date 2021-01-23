@@ -627,7 +627,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .worker-groupe-title {
-    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
   }
 }
 
@@ -642,6 +643,9 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .worker-groupe-item {
+    margin-top: 50px;
+  }
   .worker-groupe-item:not(:last-child) {
     margin-right: 30px;
   }
@@ -1185,8 +1189,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .clients {
-    padding-top: 60px;
-    padding-bottom: 64px;
+    padding: 94px 0;
   }
 }
 
@@ -1198,7 +1201,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .clients-title {
-    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
   }
 }
 
